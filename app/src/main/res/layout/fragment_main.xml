@@ -4,20 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
+
+
     tools:context=".fragments.MainFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:textColor="@color/colorIcons"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Bienvenido"/>
     
     <ImageView
-        android:layout_margin="10dp"
+        android:layout_margin="12dp"
         android:layout_gravity="center"
-        android:layout_width="340dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorIcons"
         android:src="@drawable/logo1"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:textColor="@color/colorIcons"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Selecciona el Área de tu interés"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/main_rv"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:paddingLeft="12dp">
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>

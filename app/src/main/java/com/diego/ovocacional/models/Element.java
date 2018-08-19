@@ -29,6 +29,11 @@ public class Element {
         this.description = description;
     }
 
+    public Element(String title, int image) {
+        this.title = title;
+        this.image = image;
+    }
+
     public Element(String title) {
         this.title = title;
     }

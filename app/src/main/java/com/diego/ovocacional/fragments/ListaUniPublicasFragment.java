@@ -12,10 +12,10 @@ import com.diego.ovocacional.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ListaCarrerasFragment extends Fragment {
+public class ListaUniPublicasFragment extends Fragment {
 
 
-    public ListaCarrerasFragment() {
+    public ListaUniPublicasFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class ListaCarrerasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_lista_carreras, container, false);
+        View v = inflater.inflate(R.layout.fragment_lista_uni_publicas, container, false);
         return v;
     }
 
