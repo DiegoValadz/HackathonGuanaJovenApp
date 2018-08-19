@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity
                 Log.d("MyActivity","Line" + line);
                 String[] token = line.split(",");
                 auxCarr = llenarCarreras(token[0]);
-                Universidad sample = new Universidad(token[0],token[1],token[2],token[3],token[4],token[5],token[6],token[7],auxCarr);
+                Universidad sample = new Universidad(token[0],token[1],token[2],token[3],token[4],token[5],token[6],token[7],Integer.parseInt(token[8]),auxCarr);
                 aux.add(sample);
 
             }

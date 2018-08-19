@@ -16,13 +16,14 @@ public class Universidad{
     private String costo;
     private String link;
     private String linkpromo;
+    private int logo;
 
     private ArrayList<Carrera> carreras;
 
     public Universidad() {
     }
 
-    public Universidad(String id,String nombre, String tipo, String siglas, String ciudad, String link, String costo,String linkpromo,ArrayList<Carrera> carreras ) {
+    public Universidad(String id,String nombre, String tipo, String siglas, String ciudad, String link, String costo,String linkpromo,int logo, ArrayList<Carrera> carreras ) {
         this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
@@ -31,7 +32,9 @@ public class Universidad{
         this.costo = costo;
         this.link = link;
         this.linkpromo = linkpromo;
+        this.logo = logo;
         this.carreras = carreras;
+
     }
 
     public String getId() {
@@ -96,6 +99,14 @@ public class Universidad{
 
     public void setLinkpromo(String linkpromo) {
         this.linkpromo = linkpromo;
+    }
+
+    public int getLogo() {
+        return logo;
+    }
+
+    public void setLogo(int logo) {
+        this.logo = logo;
     }
 
     public ArrayList<Carrera> getCarreras() {
