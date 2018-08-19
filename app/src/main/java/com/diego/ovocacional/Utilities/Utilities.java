@@ -17,7 +17,10 @@ public class Utilities {
     public final static int ADD = 1;
     public final static int REPLACE = 2;
     public static ArrayList<Universidad> universidades;
-    public static ArrayList<Carrera> carreras;
+    public static ArrayList<Carrera> carrera;
+
+
+
 
 
   /*  public static Intent intent(Activity activity, int selector) {

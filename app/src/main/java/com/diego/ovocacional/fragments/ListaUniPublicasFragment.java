@@ -3,17 +3,29 @@ package com.diego.ovocacional.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.diego.ovocacional.R;
+import com.diego.ovocacional.Utilities.Utilities;
+import com.diego.ovocacional.adapters.UniversidadesAdapter;
+import com.diego.ovocacional.models.Universidad;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class ListaUniPublicasFragment extends Fragment {
 
+    private ArrayList<Universidad> universidads;
+    private UniversidadesAdapter adapter;
+    private RecyclerView recyclerView;
 
     public ListaUniPublicasFragment() {
         // Required empty public constructor
@@ -25,9 +37,31 @@ public class ListaUniPublicasFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_lista_uni_publicas, container, false);
+
+        AppCompatActivity activity = (AppCompatActivity) getContext();
+        Bundle bundle = activity.getIntent().getExtras();
+        String nombre =  bundle.getString("uni");
+        universidads = selectUni(nombre);
+        recyclerView = v.findViewById(R.id.uni_public_rv);
+        adapter = new UniversidadesAdapter(universidads,getContext());
+        LinearLayoutManager llm = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(llm);
+        recyclerView.setAdapter(adapter);
         return v;
     }
+    private ArrayList<Universidad> selectUni(String n) {
+        ArrayList<Universidad> aux= new ArrayList<>();
+        for(int i = 0; i< Utilities.universidades.size(); i++){
+            for(int j = 0; j<Utilities.universidades.get(i).getCarreras().size();j++) {
+                if (TextUtils.equals(n, Utilities.universidades.get(i).getCarreras().get(j).getNombre())&&TextUtils.equals(Utilities
+                        .universidades.get(i).getTipo(),"PUBLICA")) {
+                    aux.add(Utilities.universidades.get(i));
+                }
+            }
+        }
 
+        return aux;
+    }
 
 
 }

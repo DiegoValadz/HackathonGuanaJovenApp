@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Utilities.universidades =cargaDatos();
+        Utilities.universidades = cargaDatos();
         navigationView = findViewById(R.id.nav_view);
         drawerLayout = findViewById(R.id.main_activitie);
         setToolBar();
