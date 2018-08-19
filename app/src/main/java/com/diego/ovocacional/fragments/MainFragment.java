@@ -36,14 +36,12 @@ public class MainFragment extends Fragment {
 
     private void fillElementsList() {
         elements = new ArrayList<>();
-        elements.add(new Element("Temporada 1", "Capitulos: "));
-        elements.add(new Element("Programa N°2", "Método de Bisección"));
-        elements.add(new Element("Programa N°3", "Método de Jacobi"));
-        elements.add(new Element("Programa N°4", "Método de Diferenciación numérica"));
-        elements.add(new Element("Programa N°5", "Método trapezoidal"));
-        elements.add(new Element("Programa N°6", "Método parabolico (Experimental)"));
-        elements.add(new Element("Programa N°7", "Método de LaGrange"));
-
+        elements.add(new Element("Matematicas"));
+        elements.add(new Element("Informática"));
+        elements.add(new Element("Mecánica"));
+        elements.add(new Element("Eléctrica"));
+        elements.add(new Element("Electronica"));
+        elements.add(new Element("Biología"));
 
     }
 }

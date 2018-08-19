@@ -29,6 +29,10 @@ public class Element {
         this.description = description;
     }
 
+    public Element(String title) {
+        this.title = title;
+    }
+
     public String getSubtitle() {
         return subtitle;
     }
