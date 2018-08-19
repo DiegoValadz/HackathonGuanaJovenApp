@@ -2,6 +2,7 @@ package com.diego.ovocacional.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.diego.ovocacional.R;
+import com.diego.ovocacional.Utilities.Utilities;
 import com.diego.ovocacional.activities.SecondActivity;
+import com.diego.ovocacional.fragments.ListaCarrerasFragment;
 import com.diego.ovocacional.models.Element;
 
 import java.util.List;
@@ -56,9 +59,16 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(context, SecondActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("pos",getAdapterPosition());
+                    ListaCarrerasFragment fragment = ListaCarrerasFragment.newInstance(bundle);
+                    Utilities.changeFragment(R.id.content_frame,fragment,context, Utilities.REPLACE,"Second_Fragment");
+
+
+
+                    /*Intent intent = new Intent(context, SecondActivity.class);
                     intent.putExtra("slc",getAdapterPosition());
-                    context.startActivity(intent);
+                    context.startActivity(intent);*/
                 }
             });
         }

@@ -38,8 +38,8 @@ public class MainFragment extends Fragment {
         elements = new ArrayList<>();
         elements.add(new Element("Área Academica","Matematicas",R.drawable.matematicas));
         elements.add(new Element("Área Academica","Informática",R.drawable.informatica));
-        elements.add(new Element("Área Academica","Mecánica"));
-        elements.add(new Element("Área Academica","Eléctrica"));
+        elements.add(new Element("Área Academica","Mecánica",R.drawable.mecanica));
+        elements.add(new Element("Área Academica","Eléctrica",R.drawable.electrica));
         elements.add(new Element("Área Academica","Electronica",R.drawable.electronica));
         elements.add(new Element("Área Academica","Biología",R.drawable.biologia));
     }
