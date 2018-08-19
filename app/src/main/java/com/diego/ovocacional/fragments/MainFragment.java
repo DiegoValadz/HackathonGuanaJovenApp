@@ -36,12 +36,11 @@ public class MainFragment extends Fragment {
 
     private void fillElementsList() {
         elements = new ArrayList<>();
-        elements.add(new Element("Matematicas"));
-        elements.add(new Element("Informática"));
-        elements.add(new Element("Mecánica"));
-        elements.add(new Element("Eléctrica"));
-        elements.add(new Element("Electronica"));
-        elements.add(new Element("Biología"));
-
+        elements.add(new Element("Área Academica","Matematicas",R.drawable.matematicas));
+        elements.add(new Element("Área Academica","Informática",R.drawable.informatica));
+        elements.add(new Element("Área Academica","Mecánica",R.drawable.mecanica));
+        elements.add(new Element("Área Academica","Eléctrica",R.drawable.electrica));
+        elements.add(new Element("Área Academica","Electronica",R.drawable.electronica));
+        elements.add(new Element("Área Academica","Biología",R.drawable.biologia));
     }
 }

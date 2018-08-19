@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/menu_main"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/home_icon"
             android:title="Menú Principal" />
         <item
             android:id="@+id/descubre"
@@ -14,20 +14,20 @@
             android:title="Descubre tu Carrera" />
         <item
             android:id="@+id/mis_carrerass"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/project_icon"
             android:title="Mis Selecciones" />
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Más">
         <menu>
             <item
                 android:id="@+id/ajustes"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@android:drawable/ic_menu_manage"
                 android:title="Ajustes" />
             <item
                 android:id="@+id/acerca_de"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@android:drawable/ic_dialog_info"
                 android:title="Acerca de..." />
         </menu>
     </item>

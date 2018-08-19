@@ -1,6 +1,6 @@
 package com.diego.ovocacional.models;
 
-public class Carrera {
+public class Carrera{
 
     private String nombre;
     private String area;
