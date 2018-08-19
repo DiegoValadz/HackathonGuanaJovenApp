@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,6 +20,16 @@ import android.view.MenuItem;
 import com.diego.ovocacional.R;
 import com.diego.ovocacional.Utilities.Utilities;
 import com.diego.ovocacional.fragments.MainFragment;
+import com.diego.ovocacional.models.Carrera;
+import com.diego.ovocacional.models.Universidad;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -26,11 +37,12 @@ public class MainActivity extends AppCompatActivity
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Fragment fragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Utilities.universidades =cargaDatos();
         navigationView = findViewById(R.id.nav_view);
         drawerLayout = findViewById(R.id.main_activitie);
         setToolBar();
@@ -115,6 +127,63 @@ public class MainActivity extends AppCompatActivity
         getSupportActionBar().setTitle(item.getTitle());
         drawerLayout.closeDrawers();
     }
+
+
+    public ArrayList<Universidad> cargaDatos() {
+        ArrayList<Universidad> aux = new ArrayList<>();
+        ArrayList<Carrera> auxCarr;
+        InputStream is = getResources().openRawResource(R.raw.listado);
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(is, Charset.forName("UTF-8"))
+        );
+
+        String line = "";
+        try {
+
+            reader.readLine();
+
+            while ((line = reader.readLine()) != null) {
+                Log.d("MyActivity","Line" + line);
+                String[] token = line.split(",");
+                auxCarr = llenarCarreras(token[0]);
+                Universidad sample = new Universidad(token[0],token[1],token[2],token[3],token[4],token[5],token[6],token[7],auxCarr);
+                aux.add(sample);
+
+            }
+        }catch (IOException e) {
+            Log.wtf("MyActivity","Error reading data file on line" + line,e);
+            e.printStackTrace();
+        }
+        return aux;
+    }
+
+    private ArrayList<Carrera> llenarCarreras(String id) {
+        int idNew = getResources().getIdentifier("u"+id, "raw", getPackageName());
+        ArrayList<Carrera> auxC = new ArrayList<>();
+        InputStream is = getResources().openRawResource(idNew);
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(is, Charset.forName("UTF-8"))
+        );
+
+        String line = "";
+        try {
+
+            reader.readLine();
+
+            while ((line = reader.readLine()) != null) {
+                Log.d("MyActivity","Line" + line);
+                String[] token = line.split(",");
+                Carrera sample = new Carrera(token[0],token[1],token[2]);
+                auxC.add(sample);
+
+            }
+        }catch (IOException e) {
+            Log.wtf("MyActivity","Error reading data file on line" + line,e);
+            e.printStackTrace();
+        }
+        return auxC;
+    }
+
 
 }
 

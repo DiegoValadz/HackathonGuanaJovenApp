@@ -7,10 +7,18 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import com.diego.ovocacional.models.Carrera;
+import com.diego.ovocacional.models.Universidad;
+
+import java.util.ArrayList;
+
 public class Utilities {
 
     public final static int ADD = 1;
     public final static int REPLACE = 2;
+    public static ArrayList<Universidad> universidades;
+    public static ArrayList<Carrera> carreras;
+
 
   /*  public static Intent intent(Activity activity, int selector) {
         Intent intent = null;
