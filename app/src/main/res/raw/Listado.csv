@@ -1,0 +1,47 @@
+ID,Nombre,Tipo,Siglas,CIUDAD,Link,Costo de inscripcion,Link Promocion
+1, Centro de Investigacion en Matematicas ,PUBLICA,CIMAT,Guanajuato,http://www.cimat.mx/,,https://www.youtube.com/watch?v=tDasvqvtPaA
+2,Universidad Tecnologica de Leon (UTLEON),PUBLICA,UTLEON,Leon,http://www.utleon.edu.mx/,1750,https://www.youtube.com/watch?v=tDasvqvtPaA
+3,Instituto Tecnologico de Leon,PUBLICA,ITL,Leon,https://conaige.itleon.edu.mx/,3250,https://www.youtube.com/watch?v=JwmWLcCCUdU
+4,Instituto Tecnologico Superior del Sur de Guanajuato,PUBLICA,ITSUR,Uriangato,http://www.itsur.edu.mx/home.php,2050,https://www.youtube.com/watch?v=5bRUoH_EzAk
+5,Universidad Tecnologica Suroeste de Guanajuato,PUBLICA,UTSOE,Valle de Santiago,http://www.utsoe.edu.mx/,450,https://www.youtube.com/watch?v=3ZITNb2myfE
+6,Instituto Tecnologico de Celaya,PUBLICA,ITC,Celaya,http://itcelaya.edu.mx/,3380,https://www.youtube.com/watch?v=eqdAhgYex2I
+7,Instituto Tecnologico de Roque,PUBLICA,ITROQUE,Celaya,http://www.itroque.edu.mx/,2750,https://www.youtube.com/watch?v=6avv7nVhajY
+8,Universidad Tecnologia del Norte de Guanajuato,PUBLICA,UTNG,Dolores Hidalgo,http://www.utng.edu.mx/,1000,https://www.youtube.com/watch?v=7JhAP7txTcc
+9,Universidad de Guanajuato,PUBLICA,UGTO,Celaya,http://www.celayasalvatierra.ugto.mx/,1685,https://www.youtube.com/watch?v=UvVNT04K8bI
+10,Universidad de Guanajuato,PUBLICA,UGTO,Guanajuato,http://www.ugto.mx/campusgto/,1685,https://www.youtube.com/watch?v=i6mjEdkkHVI
+11,Universidad de Guanajuato,PUBLICA,UGTO,Irapuato,http://www.ugto.mx/campusirapuatosalamanca/,1685,https://www.youtube.com/watch?v=OCsdFKzwGiA
+12,Universidad de Guanajuato,PUBLICA,UGTO,Leon,http://www.ugto.mx/campusleon/,1685,https://www.youtube.com/watch?v=i6mjEdkkHVI
+13,Universidad de Guanajuato,PUBLICA,UGTO,Salamanca,http://www.ugto.mx/campusirapuatosalamanca/,1685,https://www.youtube.com/watch?v=OCsdFKzwGiA
+14,Universidad de Guanajuato,PUBLICA,UGTO,Salvatierra,http://www.celayasalvatierra.ugto.mx/,1685,https://www.youtube.com/watch?v=UvVNT04K8bI
+15,Instituto Tecnologico Superior de Abasolo,PUBLICA,ITESA,Abasolo,http://www.tecabasolo.edu.mx/,1300,https://www.youtube.com/watch?v=LPm0Su0dMLo
+16,Instituto Tecnologico Superior de Guanajuato,PUBLICA,ITESG,Guanajuato,http://www.itesg.edu.mx/,,https://www.youtube.com/watch?v=wEKVGnDn-hs
+17,Tecnologico Superior de Purisima del Rincon,PUBLICA,,Purisima del Rincon,http://www.tecpurisima.com.mx/,,https://www.youtube.com/watch?v=a4eqR6dBX3U
+18,Instituto Tecnologico Superior de Salvatierra,PUBLICA,ITSS,Salvatierra,http://www.itess.edu.mx/website/,,https://www.youtube.com/watch?v=-PZHdb1ORUA
+19,Instituto Tecnologico Superior de Irapuato ,PUBLICA,ITESI,Irapuato,http://www.itesi.edu.mx/,,https://www.youtube.com/watch?v=T5Om_8oQKbs
+20,Instituto Tecnologico Superior de Irapuato Extension San Felipe,PUBLICA,ITESI,San Felipe,http://www.itesi.edu.mx/extensiones/extension_san_felipe.html,,https://www.youtube.com/watch?v=T5Om_8oQKbs
+21,Instituto Tecnologico Superior de Irapuato Extension San Jose Iturbide,PUBLICA,ITESI,San Jose Iturbide,http://www.itesi.edu.mx/extensiones/extension_san_jose_iturbide.html,,https://www.youtube.com/watch?v=T5Om_8oQKbs
+22,Instituto Tecnologico Superior de Irapuato Extension San Luis de la Paz,PUBLICA,ITESI,San Luis de la Paz,http://www.itesi.edu.mx/extensiones/extension_san_luis_de%20_la_paz.html,,https://www.youtube.com/watch?v=T5Om_8oQKbs
+23,Universidad Pedagogica Nacional sede Acambaro,PUBLICA,UPN,Acambaro,https://www.upn.mx/,,https://www.youtube.com/watch?v=tJfDIBSPIeo&feature=youtu.be
+24,Universidad Pedagogica Nacional sede Celaya,PUBLICA,UPN,Celaya,https://www.upn.mx/,,https://www.youtube.com/watch?v=tJfDIBSPIeo&feature=youtu.be
+25,Universidad Pedagogica Nacional sede Guanajuato,PUBLICA,UPN,Guanajuato,https://www.upn.mx/,,https://www.youtube.com/watch?v=tJfDIBSPIeo&feature=youtu.be
+26,Universidad Pedagogica Nacional sede Leon,PUBLICA,UPN,Leon,https://www.upn.mx/,,https://www.youtube.com/watch?v=tJfDIBSPIeo&feature=youtu.be
+27,Universidad Politecnica de Guanajuato,PUBLICA,UPGTO,Cortazar,http://upgto.edu.mx/,,https://www.youtube.com/watch?v=I5o_iKS47b4
+28,Universidad Politecnica del Bicentenario ,PUBLICA,,,http://www.upbicentenario.edu.mx/,,https://www.youtube.com/watch?v=FNifO-VeSAQ
+29,Universidad Politecnica de Juventino Rosas,PUBLICA,,,http://www.upjr.edu.mx/ (Link Caido),,https://www.youtube.com/watch?v=aHL70CTZs0Y
+30,Universidad De La Salle Bajio,PRIVADA,,Leon,http://bajio.delasalle.edu.mx/,,https://www.youtube.com/watch?v=3aKAiXYA_s4
+31,Universidad De La Salle Bajio sede Salamanca,PRIVADA,,Salamanca,http://bajio.delasalle.edu.mx/salamanca.php,,https://www.youtube.com/watch?v=3aKAiXYA_s4
+32,Universidad de Celaya,PRIVADA,UDEC,Celaya,http://www.udec.edu.mx/,,https://www.youtube.com/watch?v=BgNCPEUjdLE&feature=youtu.be
+33,Universidad UNITESBA,PRIVADA,,Celaya,http://www.unitesba.edu.mx/index.html,,https://www.youtube.com/watch?v=IDH592eTnIw&list=UU2EePDRqfw5okDhschhacbA&index=4
+34,Instituto Tecnologico de Diseño de Modas,PRIVADA,,Irapuato,http://www.tecdemodas.com/inicio.html,,https://www.youtube.com/watch?v=ZI4dzPa3Q-8
+35,Instituto Tecnologico de Estudios Superiores de Monterrey,PRIVADA,ITESM,Leon,http://www.itesm.mx/wps/wcm/connect/Campus/LEO/Leon,,https://www.youtube.com/watch?v=1MPNZD2FSiE&feature=youtu.be
+36,Instituto Tecnologico de Estudios Superiores de Monterrey,PRIVADA,ITESM,Irapuato,http://www.itesm.mx/wps/wcm/connect/Campus/IRA/Irapuato,,https://www.youtube.com/watch?v=HEX8faRTia0
+37,Universidad Liceo Cervantino,PRIVADA,,Irapuato,,,https://www.youtube.com/watch?v=Rnn_qBYMs-g
+38,Universidad Privada de Irapuato,PRIVADA,UPI,Irapuato,http://www.upi.edu.mx/,,Null
+39,Universidad Quetzalcoatl,PRIVADA,UQI,Irapuato,https://www.uqi.edu.mx/,,https://www.youtube.com/watch?v=Z6AixcEkDv4
+40,Universidad Iberoamericana ,PRIVADA,,Leon,https://www.leon.uia.mx/,,https://www.youtube.com/channel/UCMN77FcLTo48MGyGKB0TY2g/featured
+41,Centro Educativo Grupo CEDVA,PRIVADA,CEDVA,Leon,https://www.grupocedva.com/apps/pages/planteles-cedva-guanajuato,,https://www.youtube.com/watch?v=jJwdVdt52-Y
+42,Instituto Superior de Estudios para la Familia ,PRIVADA,ISEF,Leon,http://www.familia.edu.mx/web/,,Null
+43,Universidad del Valle de Atemajac,PRIVADA,UNIVA,Leon,http://www.univa.mx/leon,,https://www.youtube.com/watch?v=Io-LP3eN92k
+44,Universidad Insurgentes,PRIVADA,,Leon,https://www.universidadinsurgentes.edu.mx/,,Null
+45,Universiad UNIVER,PRIVADA,UNIVER,Leon,,,Null
+46,Instituto Sanmiguelense,PRIVADA,ITSES,San Miguel,http://www.itses.edu.mx/,,https://www.youtube.com/watch?v=LWaRfSiEPCs

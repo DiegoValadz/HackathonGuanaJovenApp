@@ -1,50 +1,44 @@
 package com.diego.ovocacional.models;
 
-import com.diego.ovocacional.App.MyApplication;
+
+import java.util.ArrayList;
 
 import io.realm.RealmList;
-import io.realm.RealmObject;
-import io.realm.annotations.PrimaryKey;
-import io.realm.annotations.Required;
 
-public class Universidad extends RealmObject{
 
-    @PrimaryKey
-    private int id;
-    @Required
+public class Universidad{
+
+    private String id;
     private String nombre;
-    @Required
     private String tipo;
-    @Required
     private String siglas;
-    @Required
     private String ciudad;
-    @Required
     private String costo;
-    @Required
     private String link;
+    private String linkpromo;
 
-    private RealmList<Carrera> carreras;
+    private ArrayList<Carrera> carreras;
 
     public Universidad() {
     }
 
-    public Universidad(String nombre, String tipo, String siglas, String ciudad, String costo, String link, RealmList<Carrera> carreras) {
-        this.id = MyApplication.UniversidadID.incrementAndGet();
+    public Universidad(String id,String nombre, String tipo, String siglas, String ciudad, String link, String costo,String linkpromo,ArrayList<Carrera> carreras ) {
+        this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
         this.siglas = siglas;
         this.ciudad = ciudad;
         this.costo = costo;
         this.link = link;
+        this.linkpromo = linkpromo;
         this.carreras = carreras;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -96,13 +90,19 @@ public class Universidad extends RealmObject{
         this.link = link;
     }
 
-    public RealmList<Carrera> getCarreras() {
+    public String getLinkpromo() {
+        return linkpromo;
+    }
+
+    public void setLinkpromo(String linkpromo) {
+        this.linkpromo = linkpromo;
+    }
+
+    public ArrayList<Carrera> getCarreras() {
         return carreras;
     }
 
-    public void setCarreras(RealmList<Carrera> carreras) {
+    public void setCarreras(ArrayList<Carrera> carreras) {
         this.carreras = carreras;
     }
-
-
 }
